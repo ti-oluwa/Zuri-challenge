@@ -38,7 +38,7 @@ a:active{
 }
 
 a:visited{
-    color: rgb(54, 2, 43);
+    color: royalblue;
 }
 
 .container{
@@ -78,6 +78,7 @@ h1, h2, p{
 }
 
 .navbar .container .logo{
+    font-family: segoe script;
     font-style: italic;
     font-size: 30px;
     color: #fff;
@@ -112,6 +113,7 @@ h1, h2, p{
 }
 
 #main-header .container h1{
+    font-family: segoe script;
     font-size: 50px;
     font-weight: bolder;
     color: coral;
@@ -130,6 +132,8 @@ h1, h2, p{
     height: auto;
     background-color: #333;
     color: #fff;
+    border-top: coral 2px  solid;
+    border-bottom: coral 2px  solid;
     padding: 20px;
     text-align: center;
 }
@@ -138,7 +142,7 @@ h1, h2, p{
  margin-top: 10px;
 }
 
-#login {
+#login, #signup {
     background-color: #fff;
     padding: 20px;
     margin-top: 20px;
@@ -147,46 +151,49 @@ h1, h2, p{
     box-shadow:  6px 6px 10px rgba(0, 0, 0, 0.6);
 }
 
-#login #text-border{
+#login #text-border, #signup #text-border{
     border:#ccc 2px solid;
     border-radius: 10px ;
     padding: 100px 40px;
-    text-align: justify;
+    text-align: left ;
     color: #333;
 }
 
-#login #text-border input{
+#login #text-border input, #signup #text-border input{
     margin-bottom: 40px;
 }
 
-#login #text-border label{
+#login #text-border label, #signup #text-border label{
     font-weight: bold;
-    padding-right: 20px;
+    padding-right: 10px;
 }
-#login #text-border h1{
+
+#login #text-border h1, #signup #text-border h1{
     color: coral;
     font-weight: bolder;
     font-size: 30px;
     padding-bottom: 20px;
 }
 
-#login #text-border input[type='text'], input[type='password']{
+#login #text-border input[type='text'], #login #text-border input[type='password'],
+#signup #text-border input[type='text'], #signup #text-border input[type='password'], #signup #text-border input[type='email']{
     border-radius: 5px;
-    max-width: 200px;
+    width: 250px;
     height: 30px;
     border: 2px #ccc solid;
 }
 
-#login #text-border input[type='text']:hover, input[type='password']:hover{
+#login #text-border input[type='text']:hover, #login #text-border input[type='password']:hover,
+#signup #text-border input[type='text']:hover, #signup #text-border input[type='password']:hover, #signup #text-border input[type='email']:hover{
     border: 2px coral solid;
     border-color: coral;
 }
 
-#login button{
+#login button, #signup button{
     margin-bottom: 20px;
 }
 
-#login p{
+#login p, #signup p{
     font-weight: bold;
 }
 
@@ -203,6 +210,16 @@ h1, h2, p{
         color: #333;
         word-spacing: auto;
         
+    }
+    
+    #login #text-border input[type='text'], #login #text-border input[type='password'],
+    #signup #text-border input[type='text'], #signup #text-border input[type='password'], #signup #text-border input[type='email']{
+        width: 150px;
+        
+    }
+
+    #login #text-border p a{
+        display:block
     }
     
 }
