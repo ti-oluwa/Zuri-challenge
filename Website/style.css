@@ -12,6 +12,7 @@ body{
 
 a{
     text-decoration: none;
+    color: coral;
 }
 
 button{
@@ -23,12 +24,13 @@ button{
 }
 
 button:hover{
-    background-color: coral;
+    background-color: #333;
+    color: #fff;
     padding: 7px 21px
 }
 
 a:hover{
-    color: blue;
+    color: royalblue;
 }
 
 a:active{
@@ -77,7 +79,7 @@ h1, h2, p{
 
 .navbar .container .logo{
     font-style: italic;
-    font-size: x-large;
+    font-size: 30px;
     color: #fff;
     
 }
@@ -87,7 +89,7 @@ h1, h2, p{
 }
 
 .navbar .container a:hover{
-    color: blue;
+    color: royalblue;
 }
 
 .navbar .container a:active{
@@ -104,14 +106,15 @@ h1, h2, p{
     min-height: 400px;
     justify-content: center;
     align-items: center;
-    background-color: palegoldenrod;
-    border-radius: 10px;
+    background-color: #fff;
+    border-radius: 5px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
 }
 
 #main-header .container h1{
     font-size: 50px;
     font-weight: bolder;
+    color: coral;
 }
 
 #main-header .container p{
@@ -147,7 +150,7 @@ h1, h2, p{
 #login #text-border{
     border:#ccc 2px solid;
     border-radius: 10px ;
-    padding: 120px 40px;
+    padding: 100px 40px;
     text-align: justify;
     color: #333;
 }
@@ -161,13 +164,30 @@ h1, h2, p{
     padding-right: 20px;
 }
 #login #text-border h1{
+    color: coral;
     font-weight: bolder;
     font-size: 30px;
     padding-bottom: 20px;
 }
 
-#login #text-border input text{
-    padding:10px
+#login #text-border input[type='text'], input[type='password']{
+    border-radius: 5px;
+    max-width: 200px;
+    height: 30px;
+    border: 2px #ccc solid;
+}
+
+#login #text-border input[type='text']:hover, input[type='password']:hover{
+    border: 2px coral solid;
+    border-color: coral;
+}
+
+#login button{
+    margin-bottom: 20px;
+}
+
+#login p{
+    font-weight: bold;
 }
 
 @media( max-width:600px){
